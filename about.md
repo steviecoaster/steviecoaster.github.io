@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+A 12 year IT veteran, with an unhealthy addiction to automation, Powershell, and making things out of wood.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I'm always interested in hearing user feedback. Don't like an article? Need some more information? Want to see a topic covered? I want to know that kind of stuff! Reach me in any of the places below.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[Twitter: @Steviecoaster](https://twitter.com/steviecoaster)
+[Powershell Slack: @steviecoaster](https://powershell.slack.com)
