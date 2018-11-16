@@ -12,5 +12,4 @@ I'm always interested in hearing user feedback. Don't like an article? Need some
 
 ### Contact me
 
-[Twitter: @Steviecoaster](https://twitter.com/steviecoaster)
-[Powershell Slack: @steviecoaster](https://powershell.slack.com)
+[Twitter: @Steviecoaster](https://twitter.com/steviecoaster) | [Powershell Slack: @steviecoaster](https://powershell.slack.com) | [Email](mailto:svalding@gmail.com)
