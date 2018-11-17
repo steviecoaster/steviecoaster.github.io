@@ -28,7 +28,7 @@ steps:
   inputs:
     targetType: 'filePath' # Optional. Options: filePath, inline
     filePath: ./Invoke-PagesBuild.ps1 # Required when targetType == FilePath
-    arguments: $(PagesApiKey) # Optional
+    arguments: $(GithubKey) # Optional
     #script: 'Get-Location' # Required when targetType == Inline
     errorActionPreference: 'stop' # Optional. Options: stop, continue, silentlyContinue
     failOnStderr: true # Optional
