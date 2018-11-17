@@ -1,0 +1,37 @@
+# Jekyll site
+# Package your Jekyll site using the jekyll/builder Docker container image.
+# Add steps that build, test, save build artifacts, deploy, and more:
+# https://aka.ms/yaml
+
+name: WhatTheShell blog
+trigger: none
+pr: none 
+pool:
+  vmImage: 'Ubuntu 16.04'
+
+steps:
+- task: Docker@0
+  displayName: 'Run Jekyll'
+  inputs:
+    containerRegistryType: 'Container Registry'
+    action: 'Run an image'
+    imageName: 'jekyll/builder:latest'
+    volumes: |
+      $(build.sourcesDirectory):/srv/jekyll
+      $(build.binariesDirectory):/srv/jekyll/_site
+    containerCommand: 'jekyll build'
+    detached: false
+
+#Powershell stuff
+task: Powershell@2
+displayName: 'Trigger Github Pages Build'
+  inputs:
+    targetType: 'filePath' # Optional. Options: filePath, inline
+    filePath: ./Invoke-PagesBuild.ps1 # Required when targetType == FilePath
+    arguments: $(PagesApiKey) # Optional
+    #script: 'Get-Location' # Required when targetType == Inline
+    errorActionPreference: 'stop' # Optional. Options: stop, continue, silentlyContinue
+    failOnStderr: true # Optional
+    #ignoreLASTEXITCODE: false # Optional
+    pwsh: true # Optional
+    #workingDirectory: /home/vsts/work/1/s/
