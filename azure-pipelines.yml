@@ -23,8 +23,8 @@ steps:
     detached: false
 
 #Powershell stuff
-task: Powershell@2
-displayName: 'Trigger Github Pages Build'
+- task: Powershell@2
+  displayName: 'Trigger Github Pages Build'
   inputs:
     targetType: 'filePath' # Optional. Options: filePath, inline
     filePath: ./Invoke-PagesBuild.ps1 # Required when targetType == FilePath
