@@ -33,7 +33,7 @@ steps:
     errorActionPreference: 'stop' # Optional. Options: stop, continue, silentlyContinue
     failOnStderr: true # Optional
     #ignoreLASTEXITCODE: false # Optional
-    pwsh: true # Optional
+    #pwsh: true # Optional
     #workingDirectory: /home/vsts/work/1/s/
 
 
