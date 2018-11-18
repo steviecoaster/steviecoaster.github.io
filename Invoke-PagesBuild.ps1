@@ -50,7 +50,5 @@ $ApiParams = @{
     }
 }
 'Query URI: {0}' -f $ApiParams['Uri'] | Write-Host -ForegroundColor Blue
-
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 Invoke-RestMethod @ApiParams
-
-if ($Error[0]) {exit -1} else {exit 0}
