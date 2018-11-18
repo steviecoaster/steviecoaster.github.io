@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Adding Pipeline Support to Your Scripts!
-date: 2018-11-23
+date: 2018-11-18
 categories: [powershell]
 tags: [powershell,notifications,alerting]
 ---
@@ -58,4 +58,3 @@ You can use a named expression to coerce your pipeline into working if the objec
 
 That's all there is to adding pipeline support to your functions! Give it a try, and take your scripts to higher levels of functionality! Have questions or feedback? Use the links below to contact me. I'd love to hear from you!
 
-For information on adding `-WhatIf` support to your functions check out Joel Sallow's post on the topic on his blog [here](INSERT_LINK_HERE)
