@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding pipeline support to your scripts
+title: Adding Pipeline Support to Your Scripts!
 date: 2018-11-23
 categories: [powershell]
 tags: [powershell,notifications,alerting]
@@ -42,7 +42,7 @@ Param(
 )
 ```
 
-The above cmdlet block tells your script that the Name parameter accepts pipeline input. The caveat here is that `ValueFromPipeline` expects the pipeline input to be of the same _type_ as what it expects (string in this instance), or that it can be converted to the type that it expects.
+The above param block tells your script that the Name parameter accepts pipeline input. The caveat here is that `ValueFromPipeline` expects the pipeline input to be of the same _type_ as what it expects (string in this instance), or that it can be converted to the type that it expects.
 
 For something like a script to work with computer names you may do something like this:
 
@@ -50,6 +50,12 @@ For something like a script to work with computer names you may do something lik
 
 By using the pipeline, you access the current object's (`$_`) Name property in the pipeline, and it happily accepts it into Name parameter.
 
-Another option is `ValueFromPipelineByPropertyName`, which like the first option, expects input of the same _type_, but also has the requirement that the object contain a property of the same _name_ as the parameter you wish to pass it too. 
+Another option is `ValueFromPipelineByPropertyName`, which like the first option, expects input of the same _type_, but also has the requirement that the object contain a property of the same _name_ as the parameter you wish to pass it too.
+
+You can use a named expression to coerce your pipeline into working if the object you receive doesn't have the same name, but is of the same type. Here's an example (let's pretend name doesn't exist on Get-ADComputer, and use something else in its place)
+
+`Get-ADComputer | Select-Object @{Name='Name';Expression={$_.DNSName}} | YourFunction`
+
+That's all there is to adding pipeline support to your functions! Give it a try, and take your scripts to higher levels of functionality! Have questions or feedback? Use the links below to contact me. I'd love to hear from you!
 
 For information on adding `-WhatIf` support to your functions check out Joel Sallow's post on the topic on his blog [here](INSERT_LINK_HERE)
