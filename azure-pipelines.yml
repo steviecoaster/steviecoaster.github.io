@@ -35,3 +35,11 @@ steps:
     #ignoreLASTEXITCODE: false # Optional
     pwsh: true # Optional
     #workingDirectory: /home/vsts/work/1/s/
+
+
+- task: petergroenewegen.PeterGroenewegen-Xpirit-Vsts-Release-Twitter.Xpirit-Vsts-Release-Twitter.Twitter@1
+  displayName: 'Twitter task'
+  inputs:
+    TwitterEndPoint: Steviecoaster
+    Message: 'New blog post just out! Head to https://steviecoaster.github.io to check it out!'
+
