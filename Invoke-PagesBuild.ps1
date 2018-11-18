@@ -52,3 +52,19 @@ $ApiParams = @{
 'Query URI: {0}' -f $ApiParams['Uri'] | Write-Host -ForegroundColor Blue
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 Invoke-RestMethod @ApiParams
+
+
+#region Update TwitterTitle variable for the tweet.
+
+$Date = Get-Date -Format yyyy-MM-dd
+
+$BlogPostFile = Get-ChildItem -Path $PSScriptRoot\_posts |
+                Where-Object {$_.Name -match "$Date"} |
+                Select-Object -ExpandProperty Name
+
+$BlogPostFile -match "\d-([a-z-]+)\.md"
+
+$UrlEnding = $matches[1]
+
+Write-Host "##vso[task.setvariable variable=BlogPostTitle]$UrlEnding"
+
