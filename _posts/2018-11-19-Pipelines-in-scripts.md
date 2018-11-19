@@ -8,7 +8,7 @@ tags: [powershell,notifications,alerting]
 
 You've probably used the pipeline 1,000 times and not though about _how_ exactly you can send the output of one command to another. It's actually, incredibly simple to do, and enables you to have a LOT of flexibility in your scripts!
 
-## Pipeline overview
+# Pipeline overview
 
 If you are just starting out in Powershell and stumbled across this blog post, I'd like to take a moment to explain just exactlty the Powershell Pipeline _is_, and how it _works_.
 
@@ -36,7 +36,7 @@ Consider the following `Param()` block declaration
 ```powershell
 [cmdletBinding()]
 Param(
-    [Parameter(Mandatory,Position=0,ValueFromPipeline=$true)]
+    [Parameter(Mandatory,Position=0,ValueFromPipeline)]
     [string]
     $Name
 )
@@ -57,4 +57,3 @@ You can use a named expression to coerce your pipeline into working if the objec
 `Get-ADComputer | Select-Object @{Name='Name';Expression={$_.DNSName}} | YourFunction`
 
 That's all there is to adding pipeline support to your functions! Give it a try, and take your scripts to higher levels of functionality! Have questions or feedback? Use the links below to contact me. I'd love to hear from you!
-
