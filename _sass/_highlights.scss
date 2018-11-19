@@ -28,9 +28,19 @@ pre {
   overflow: scroll;
 }
 
+}
+
 code {
   font-family:'Consolas','Monaco', monospace;
+  
 }
+
+
+//Inline-Code
+code.highlighter-rouge {
+  color: rgb(15, 129, 44);
+  font-weight: bold;
+  display: inline-block;
 }
 
 .highlight .c { color: #586E75 } /* Comment */
