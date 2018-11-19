@@ -3,7 +3,7 @@ layout: post
 title: Setting up Jeykll to build with AzDOS
 date: 2018-11-18
 categories: [powershell]
-tags: [powershell,ci/cd,alerting,blogging]
+tags: [powershell,ci/cd,jeykll,blogging]
 ---
 
 I spent the better part of the weekend exploring the various ways I could leverage CI/CD to streamline getting content that I've written onto my blog. This post will be about my journey, and hopefully provide a useful resource to you, should you choose to do something similar.
