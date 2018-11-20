@@ -6,13 +6,13 @@ categories: [powershell]
 tags: [powershell,notifications,alerting]
 ---
 
-You've probably used the pipeline 1,000 times and not though about _how_ exactly you can send the output of one command to another. It's actually, incredibly simple to do, and enables you to have a LOT of flexibility in your scripts!
+You've probably used the pipeline 1,000 times and not thought about _how_ exactly you can send the output of one command to another. It's actually, incredibly simple to do, and enables you to have a LOT of flexibility in your scripts!
 
 # Pipeline overview
 
-If you are just starting out in Powershell and stumbled across this blog post, I'd like to take a moment to explain just exactlty the Powershell Pipeline _is_, and how it _works_.
+If you are just starting out in Powershell and stumbled across this blog post, I'd like to take a moment to explain just exactly the Powershell Pipeline _is_, and how it _works_.
 
-The pipeline is one of the most powerful parts of Powershell! A good analogy to use to give a visual representation of the pipeline. Think of it like a colored stack of lego blocks. Each part of the stack is an individual piece of the whole stack.
+The pipeline is one of the most powerful parts of Powershell! Here's a good analogy to use to give a visual representation of the pipeline. Think of it like a colored stack of lego blocks. Each part of the stack is an individual piece of the whole stack, thus each colored block (cmdlet) is an individual segment of the the entire stack (Pipeline)!
 
 The pipeline character is the | (pipe), and pipeline _elements_ are the cmdlets you are running on each side of it.
 
@@ -25,6 +25,51 @@ The pipeline is one of, no probably _the_ best tool for discovering things insid
 You wish to find all of the "stuff" attached to an object emitted by `Get-Process`
 
 Run this in a console: `Get-Service | Get-Member`
+
+```powershell
+
+PS C:\> Get-Service | Get-Member
+
+
+   TypeName: System.ServiceProcess.ServiceController
+
+Name                      MemberType    Definition
+----                      ----------    ----------
+Name                      AliasProperty Name = ServiceName
+RequiredServices          AliasProperty RequiredServices = ServicesDependedOn
+Disposed                  Event         System.EventHandler Disposed(System.Object, System.EventArgs)
+Close                     Method        void Close()
+Continue                  Method        void Continue()
+CreateObjRef              Method        System.Runtime.Remoting.ObjRef CreateObjRef(type requestedType)
+Dispose                   Method        void Dispose(), void IDisposable.Dispose()
+Equals                    Method        bool Equals(System.Object obj)
+ExecuteCommand            Method        void ExecuteCommand(int command)
+GetHashCode               Method        int GetHashCode()
+GetLifetimeService        Method        System.Object GetLifetimeService()
+GetType                   Method        type GetType()
+InitializeLifetimeService Method        System.Object InitializeLifetimeService()
+Pause                     Method        void Pause()
+Refresh                   Method        void Refresh()
+Start                     Method        void Start(), void Start(string[] args)
+Stop                      Method        void Stop()
+WaitForStatus             Method        void WaitForStatus(System.ServiceProcess.ServiceControllerStatus desiredStatus), void Wait...
+CanPauseAndContinue       Property      bool CanPauseAndContinue {get;}
+CanShutdown               Property      bool CanShutdown {get;}
+CanStop                   Property      bool CanStop {get;}
+Container                 Property      System.ComponentModel.IContainer Container {get;}
+DependentServices         Property      System.ServiceProcess.ServiceController[] DependentServices {get;}
+DisplayName               Property      string DisplayName {get;set;}
+MachineName               Property      string MachineName {get;set;}
+ServiceHandle             Property      System.Runtime.InteropServices.SafeHandle ServiceHandle {get;}
+ServiceName               Property      string ServiceName {get;set;}
+ServicesDependedOn        Property      System.ServiceProcess.ServiceController[] ServicesDependedOn {get;}
+ServiceType               Property      System.ServiceProcess.ServiceType ServiceType {get;}
+Site                      Property      System.ComponentModel.ISite Site {get;set;}
+StartType                 Property      System.ServiceProcess.ServiceStartMode StartType {get;}
+Status                    Property      System.ServiceProcess.ServiceControllerStatus Status {get;}
+ToString                  ScriptMethod  System.Object ToString();
+```
+
 The screen output you see contains useful information such as all the properties, and methods attached to the object, and also what Type of object it returns.
 
 ## Leveraging the pipeline in code
