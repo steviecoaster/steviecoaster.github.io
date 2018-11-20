@@ -10,7 +10,7 @@ tags: [powershell,justforfun]
 
 This was born of a trying to be clever and funny in the Powershell Slack channel last night. It ended up working better than expected. Want to make a coworker's cheeks turn red? Wanna make your significant other roll their eyes at you? Don't worry, I've got you covered.
 
-Save the following to a ps1 file, and enjoy your console telling you random pickup lines from the internet. And yes folks, apparently there really _is_ an API for everything...
+Save the following to a ps1 file, or just copy and paste it into a console, and enjoy your console telling you random pickup lines from the internet. And yes folks, apparently there really _is_ an API for everything...
 
 ```powershell
 Function Invoke-PickupLine {
@@ -34,6 +34,7 @@ Function        Invoke-PickupLine
 ```
 
 Once you know it's loaded in your function drive, you can access it's scriptblock like this:
+\* _this only works for non-compiled Script cmdlets_
 
 ```powershell
 PS C:\> ${Function:\Invoke-PickupLine}
