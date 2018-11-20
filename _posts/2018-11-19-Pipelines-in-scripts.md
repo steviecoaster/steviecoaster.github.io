@@ -14,7 +14,7 @@ If you are just starting out in Powershell and stumbled across this blog post, I
 
 The pipeline is one of the most powerful parts of Powershell! Here's a good analogy to use to give a visual representation of the pipeline. Think of it like a colored stack of lego blocks. Each part of the stack is an individual piece of the whole stack, thus each colored block (cmdlet) is an individual segment of the the entire stack (Pipeline)!
 
-The pipeline character is the '|' (pipe), and pipeline _elements_ are the cmdlets you are running on each side of it.
+The pipeline character is the \| (pipe), and pipeline _elements_ are the cmdlets you are running on each side of it.
 
 When working with the pipeline it's important to remember the idea of _"Filter Left,Format Right"_. This means that you make your object (pipeline element) as small as possible at the very beginning of your pipeline, before sending it on to the next command, and finally, outputting it in whatever format you wish (note, this could be any of the _Format-*_ cmdlets, or writing to the screen or a file,etc.)
 
