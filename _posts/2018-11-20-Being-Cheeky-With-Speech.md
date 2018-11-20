@@ -34,7 +34,7 @@ Function        Invoke-PickupLine
 ```
 
 Once you know it's loaded in your function drive, you can access it's scriptblock like this:
-\* _this only works for non-compiled Script cmdlets_
+\* _this only works for non-compiled Script cmdlets, without a lot more work. It's theoretically possible, but kinda ugly_
 
 ```powershell
 PS C:\> ${Function:\Invoke-PickupLine}
@@ -49,7 +49,9 @@ PS C:\> ${Function:\Invoke-PickupLine}
 That makes sending the function across the network to a remote computer pretty easy! Just execute your command like this:
 
 ```powershell
-Invoke-Command -Computername remotecomputer -Scriptblock { $args[0] } -Args ${Function:\Invoke-PickupLine}
+Invoke-Command -Computername remotecomputer -Scriptblock ${Function:\Invoke-PickupLine}
 ```
+
+If you'd like to know more about that Function:\ drive business, Joel Sallow has a real nice write-up on his blog over [here](https://vexx32.github.io/2018/11/02/Transferring-Functions/) that I would encourage you to read.
 
 Happy trolling! Until next time...
