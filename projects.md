@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Projects
+title: 
 permalink: /projects/
 ---
 
 # Open Source Projects
 
-I maintain the [PSSysadminToolkit](https://github.com/steviecoaster/PSSysadminToolkit) on Github. 
+I maintain the [PSSysadminToolkit](https://github.com/steviecoaster/PSSysadminToolkit) on Github.
 
 The project aims to be a collection of useful Powershell scripts that makes life as a sysadmin just a little bit easier. 
 
