@@ -1,10 +1,8 @@
 ---
 layout: page
-title: 
+title: Open Source Projects
 permalink: /projects/
 ---
-
-# Open Source Projects
 
 I maintain the [PSSysadminToolkit](https://github.com/steviecoaster/PSSysadminToolkit) on Github.
 
