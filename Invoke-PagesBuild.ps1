@@ -41,6 +41,7 @@ param(
     $Repository = $env:SYSTEM_TEAMPROJECT
 )
 
+Write-Host "Building API parameters" -ForegroundColor Blue
 $ApiParams = @{
     Uri     = "https://api.github.com/repos/$Username/$Repository/pages/builds"
     Method  = 'POST'
@@ -51,18 +52,22 @@ $ApiParams = @{
 }
 'Query URI: {0}' -f $ApiParams['Uri'] | Write-Host -ForegroundColor Blue
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+Write-Host "Querying Github..." -ForegroundColor Blue
 Invoke-RestMethod @ApiParams
 
 
 #region Update TwitterTitle variable for the tweet.
-
+Write-Host "Setting Current Date" -ForegroundColor Blue
 $Date = Get-Date -Format yyyy-MM-dd
+Write-Host "Date is $Date" -ForegroundColor Blue
+Write-Host (Get-ChildItem | Select -Expand Basename) -ForegroundColor Green
 
+Write-Host "$PSScriptRoot" -ForegroundColor Green
 $BlogPostFile = Get-ChildItem -Path $PSScriptRoot\_posts |
                 Where-Object {$_.Name -match "$Date"} |
                 Select-Object -ExpandProperty Name
 
-$BlogPostFile -match "\d-([a-z-]+)\.md"
+$BlogPostFile -match "\d-([a-z-!]+)\.md"
 
 $UrlEnding = $matches[1]
 
