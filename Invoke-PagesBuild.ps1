@@ -99,7 +99,7 @@ Function New-ShortUri {
 
         
 
-        $ShortUri = Invoke-WebRequest -Uri "https://tinyurl.com/api-create.php?url=$Uri" | Select-Object -ExpandProperty Content
+        $ShortUri = Invoke-WebRequest -Uri "https://tinyurl.com/api-create.php?url=$Uri" -UseBasicParsing | Select-Object -ExpandProperty Content
 
         
 
