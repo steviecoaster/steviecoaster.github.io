@@ -1,7 +1,7 @@
 ---
 layout: post
 Title: Write good help...it's important!
-date: 2018-11-26
+date: 2018-11-23
 categories: [powershell]
 tags: [powershell,cbh,best practices,help]
 ---
