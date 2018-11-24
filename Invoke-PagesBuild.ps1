@@ -57,12 +57,12 @@ Invoke-RestMethod @ApiParams
 #region Update TwitterTitle variable for the tweet.
 
 $Date = Get-Date -Format yyyy-MM-dd
-
+$RootPath = Split-Path . -Parent
 $BlogPostFile = Get-ChildItem -Path $PSScriptRoot\_posts |
                 Where-Object {$_.Name -match "$Date"} |
                 Select-Object -ExpandProperty Name
 
-$BlogPostFile -match "\d-([a-z-]+)\.md"
+$BlogPostFile -match "\d-([a-z-]+)\.md" > $null
 
 $UrlEnding = $matches[1]
 
