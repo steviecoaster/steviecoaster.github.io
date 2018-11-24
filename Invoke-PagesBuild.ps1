@@ -72,3 +72,49 @@ $BlogPostFile -match "\d-([a-z-!]+)\.md"
 $UrlEnding = $matches[1]
 
 Write-Host "##vso[task.setvariable variable=BlogPostTitle]$UrlEnding"
+
+Function New-ShortUri {
+    <#
+    .SYNOPSIS
+    Generate tiny url from a web link
+    .DESCRIPTION
+    Take a long, unseemly URI from online, and turn it into a short link for distribution or social media
+    .PARAMETER Uri
+    The long URI you wish to shorten
+    .EXAMPLE
+    New-ShortUri -Uri https://www.superlongdomainname/with/weird/page/links.htm
+    
+    #>
+
+    [cmdletBinding(HelpUri ='https://github.com/steviecoaster/PSSysadminToolkit/blob/Dev/Help/New-ShortUri.md')]
+    [Alias('ShortUri')]
+    Param(
+        [Parameter(Position = 0, ValueFromPipeline)]
+        [String]
+        $Uri
+ 
+    )
+
+    Process {
+
+        
+
+        $ShortUri = Invoke-WebRequest -Uri "https://tinyurl.com/api-create.php?url=$Uri" | Select-Object -ExpandProperty Content
+
+        
+
+        $UriObject = [pscustomobject]@{
+
+            LongUri  = $Uri
+            ShortUri = $ShortUri
+        }
+
+        $UriObject
+
+    }
+
+}
+
+$BlogUrl = "https://steviecoaster.github.io/$UrlEnding"
+
+Write-Host "##vso[task.setvariable variable=BlogPostTitle]$BlogUrl"
