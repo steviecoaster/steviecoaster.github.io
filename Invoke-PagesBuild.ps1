@@ -117,4 +117,5 @@ Function New-ShortUri {
 
 $BlogUrl = "https://steviecoaster.github.io/$UrlEnding"
 
-Write-Host "##vso[task.setvariable variable=BlogUrl]$BlogUrl"
+$ShortLink = New-ShortUri -Uri $BlogUrl  | Select -Expand ShortUri
+Write-Host "##vso[task.setvariable variable=BlogUrl]$ShortLink"
