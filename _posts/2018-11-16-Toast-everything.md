@@ -4,6 +4,7 @@ title: Using Toast notifications in Powershell
 date: 2018-11-16
 categories: [powershell]
 tags: [powershell,notifications,alerting]
+comments: true
 ---
 
 Notifications can be quite a bit more than just those annoying pop-ups you see down by your system clock from time to time. When created using Powershell, you can get an _incredible_ amount of functionality out of them.

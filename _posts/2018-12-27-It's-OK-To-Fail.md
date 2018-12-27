@@ -4,6 +4,7 @@ Title: It's OK to fail!
 date: 2018-12-27
 categories: [powershell]
 tags: [powershell,debugging,failing]
+comments: true
 ---
 
 We've all hit that low spot, when we are working with an especially difficult problem, and the code we are writing to try and solve it just _won't_ work the way we want it too.

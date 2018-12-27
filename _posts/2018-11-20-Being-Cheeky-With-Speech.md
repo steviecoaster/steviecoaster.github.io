@@ -4,6 +4,7 @@ title: Being Cheeky With Speech
 date: 2018-11-20
 categories: [powershell]
 tags: [powershell,justforfun]
+comments: true
 ---
 
 # Goofing off in the shell

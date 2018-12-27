@@ -4,6 +4,7 @@ title: Adding Pipeline Support to Your Scripts!
 date: 2018-11-18
 categories: [powershell]
 tags: [powershell,notifications,alerting]
+comments: true
 ---
 
 You've probably used the pipeline 1,000 times and not thought about _how_ exactly you can send the output of one command to another. It's actually, incredibly simple to do, and enables you to have a LOT of flexibility in your scripts!
