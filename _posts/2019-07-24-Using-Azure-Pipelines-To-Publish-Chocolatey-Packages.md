@@ -1,7 +1,7 @@
 ---
 layout: post
 Title: Use Azure Pipelines to publish Chocolatey Packages
-date: 2018-11-23
+date: 2019-07-24
 categories: [powershell]
 tags: [powershell,chocolatey,software automation,packaging,choco,azure]
 ---
