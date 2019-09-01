@@ -1,7 +1,7 @@
 ---
 layout: post
 Title: Demystifying Pipeline Build Scripts
-date: 2018-08-31
+date: 2019-08-31
 categories: [powershell]
 tags: [powershell,devops,pipeline,azdos,azuredevops]
 comments: true
