@@ -19,7 +19,7 @@ Community is the biggest and best aspect of PowerShell to me, personally. I feel
 
 If you're on the fence about becoming more active, or are scared that what you've done to date isn't "good enough", just stop. You've solved a complex problem that _will_ help someone else, I guarantee it. So share! There are so many amazing communities and avenues available to you to do so, and I challenge you to step outside of your comfort zone and join in the conversation. There's a very active community of folks in the PowerShell [Slack](https://aka.ms/psslack) channel, which is helpfully bridged to [Discord](https://aka.ms/psdiscord) if you prefer that chat client.
 
-You'll also find many of us on Twitter. (Seriously[follow me!](https://twitter.com/steviecoaster)], you'll be able to connect with at on of people directly off of my following/followers list).
+You'll also find many of us on Twitter. (Seriously, [follow me!](https://twitter.com/steviecoaster)), you'll be able to connect with at on of people directly off of my following/followers list).
 
 Look in your local area for a PowerShell User Group. There's a section of Slack dedicated to many of them, so jump in and say "Hi", and get details on when meetings are. If there are none close to you, many of the larger ones in big metro areas have the ability to join remotely via Webex, or Zoom, or some other online web conference platform. It's a great way to join in if you are geographically unable to attend in person.
 
