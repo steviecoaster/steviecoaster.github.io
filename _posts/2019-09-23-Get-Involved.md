@@ -1,6 +1,6 @@
 ---
 layout: post
-Title: Imposter Syndrome is Bull#%@!
+Title: Imposter Syndrome is Bullshit
 date: 2019-09-23
 categories: [powershell,community]
 tags: [powershell,devops,pipeline,azdos,azuredevops]
