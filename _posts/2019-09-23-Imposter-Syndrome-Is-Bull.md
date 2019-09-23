@@ -7,7 +7,9 @@ tags: [powershell,devops,pipeline,azdos,azuredevops]
 comments: true
 ---
 
-There. I said it.
+
+
+Imposter Syndrom is bull@^$%. There. I said it.
 
 I wanted to take a little bit of time to recap my weekend spent in Raleigh, North Carolina, at the PowerShell Saturday event put on by the local user group there. Man, what a great time.
 
