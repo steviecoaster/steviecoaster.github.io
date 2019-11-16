@@ -15,7 +15,7 @@ Chocolatey, or 'choco' for short, is a software package management application f
 
 # Using it
 
-Getting chocolatey installed is dead simple. Open up an administrative powershell prompt and enter `Set-ExecutionPolicy Bypass -Force -Scope Process; iex (New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/Install.ps1))`. If you want to see what that install script contains before running it, you can view it [here](https://chocolatey.org/Install.ps1).
+Getting chocolatey installed is dead simple. Open up an administrative powershell prompt and enter `Set-ExecutionPolicy Bypass -Force -Scope Process; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/Install.ps1'))`. If you want to see what that install script contains before running it, you can view it [here](https://chocolatey.org/Install.ps1).
 
 Once you have chocolatey installed, you will be able to install any packages listed on the community repository. As an example I'll demonstrate installing Google Chrome, and Visual Studio Code. 
 
