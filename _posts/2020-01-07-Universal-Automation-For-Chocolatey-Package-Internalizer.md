@@ -11,7 +11,7 @@ So [@adamdriscoll](https://twitter.com/adamdriscoll) created this new amazing pr
 
 # The Setup
 
-Since I use vagrant, it was really quick for me to spin up an environment. I keep a copy of our [chocolatey test environment]() handy, and I've updated it to run on Server 2019. So using my [Vagrantey](https://github.com/steviecoaster/Vagrantey) module I just did a quick `Start-VagrantEnvironment -Environment Choco-Test` and brought up a box.
+Since I use vagrant, it was really quick for me to spin up an environment. I keep a copy of our [chocolatey test environment](https://github.com/chocolatey-community/chocolatey-test-environment) handy, and I've updated it to run on Server 2019. So using my [Vagrantey](https://github.com/steviecoaster/Vagrantey) module I just did a quick `Start-VagrantEnvironment -Environment Choco-Test` and brought up a box.
 
 Next I installed a couple of choco packages:
 
