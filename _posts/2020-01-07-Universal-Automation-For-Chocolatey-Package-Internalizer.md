@@ -27,7 +27,7 @@ After I had that work completed I installed the latest build of Universal Automa
 
 I decided that it would be far easier to have the scripts we provide in a module, it's just much cleaner that way. So whipped up a quick ChocoInternalizer module by simply copying the scripts from above into a folder named `ChocoInternalizer`. Then in VSCode I whipped up a quick psm1 and psd1 file, made sure my cmdlets were proper functions, and did a quick test with `Import-Module C:\Git\ChocoInternalizer\ChocoInternalizer.psd1` and verified all my cmdlets showed up with `Get-Command -Module ChocoInternalizer`.
 
-One quick note, I did make a slight adjustment to the scripts in that in `ConvertTo-ChocoObject` I changed the split to be on the '|' character, and modified other scripts to use the `-r` flag of choco to limit the output to something a little easier to digest. You absolutely _don't_ have to do that, I just like to mess with (@pauby)[https://twitter.com/pauby].
+One quick note, I did make a slight adjustment to the scripts in that in `ConvertTo-ChocoObject` I changed the split to be on the '\|' character, and modified other scripts to use the `-r` flag of choco to limit the output to something a little easier to digest. You absolutely _don't_ have to do that, I just like to mess with (@pauby)[https://twitter.com/pauby].
 
 With that good to go, I set off to do the work in Universal Automation.
 
