@@ -7,7 +7,7 @@ tags: [powershell,devops,development,chocolatey,universalautomation]
 comments: true
 ---
 
-So [@adamdriscoll](https://twitter.com/adamdriscoll) created this new amazing producted called Universal Automation. It's a PowerShell job scheduling platform built on top of his awesome Universal Dashboard product. I was fortunate enough to be invited into the Private Beta, so I've been playing with it off and on over the last couple of weeks. I had the idea this evening to see "Can I use this to do Chocolatey Package Internalization?" We have documentation on setting it up in Jenkins over [here](https://chocolatey.org/docs/how-to-setup-internal-package-repository). Note, this is a business feature, so if you are running Open Source or have a Pro License, I'm sorry, this blog post probably won't be much help, other than showing off how _awesome_ Universal Automation is.
+So [@adamdriscoll](https://twitter.com/adamdriscoll) created this new amazing product called Universal Automation. It's a PowerShell job scheduling platform built on top of his awesome Universal Dashboard product. I was fortunate enough to be invited into the Private Beta, so I've been playing with it off and on over the last couple of weeks. I had the idea this evening to see "Can I use this to do Chocolatey Package Internalization?" We have documentation on setting it up in Jenkins over [here](https://chocolatey.org/docs/how-to-setup-internal-package-repository). Note, this is a business feature, so if you are running Open Source or have a Pro License, I'm sorry, this blog post probably won't be much help, other than showing off how _awesome_ Universal Automation is.
 
 # The Setup
 
