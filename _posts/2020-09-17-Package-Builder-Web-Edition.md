@@ -149,7 +149,7 @@ The script will temporarily create a copy of the installer in C:\tmp, which then
 
 ### End Result
 
-Once you've done all of that, it's off to run some powershell! To make this work, we are going to need to provider a header. This part I don't _quite_ 100% like, but for the purposes of "Could this even work", it's good enough.
+Once you've done all of that, it's off to run some powershell! To make this work, we are going to need to provide a header. This part I don't _quite_ 100% like, but for the purposes of "Could this even work", it's good enough.
 
 Open up an _elevated_* PowerShell console and run the following, editing it with an actual installer file, and the name you wish to give the package:
 
