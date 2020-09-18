@@ -9,7 +9,7 @@ comments: true
 
 # Package Builder - Web Edition
 
-_Preface: This isn't officially supported by Chocolatey. But, I'm nothing if not adventurous. What's the saying? "Where there's a will, there's a way"? Anyway, I digress, onto the good stuff.
+_Preface: This isn't officially supported by Chocolatey. But, I'm nothing if not adventurous. What's the saying? "Where there's a will, there's a way"? Anyway, I digress, onto the good stuff._
 
 Earlier today I had a conversation with myself, as often happens. It went a little something like this.
 
