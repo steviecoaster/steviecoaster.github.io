@@ -65,6 +65,7 @@ Once logged in, follow these steps:
 ![Configure Endpoint](/images/PBWUI/ConfigureEndpoint.png)
 
 - Edit the endpoint to, you know, _do_ something by clicking 'View Endpoint'
+
 ![Edit Endpoint](/images/PBWUI/ViewEndpoint.png)
 
 - Select 'Edit' once on the 'View Endpoint' page, and write the code you want your endpoint to execute
